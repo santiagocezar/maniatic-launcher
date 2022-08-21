@@ -1,7 +1,8 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=Sonic Mania
+Name=RSDKv5U
 Icon=io.github.Rubberduckycooly.RSDKv5
 Exec=maniatic
 Categories=Game;
+Keywords=Sonic;Mania;Mania Plus;

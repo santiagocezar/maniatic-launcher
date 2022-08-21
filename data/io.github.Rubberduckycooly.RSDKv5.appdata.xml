@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
   <id>io.github.Rubberduckycooly.RSDKv5</id>
-  <name>RSDKv5 Decompilation</name>
+  <name>RSDKv5U</name>
   <summary> A complete decompilation of Retro Engine (v5)</summary>
+  <keywords>
+    <keyword>Sonic</keyword>
+    <keyword>Mania</keyword>
+    <keyword>decompilation</keyword>
+  </keywords>
+  <categories>
+    <category>Game</category>
+  </categories>
   <description>
     <p>
     A complete decompilation of Retro Engine v5, used in Sonic Mania Plus.
