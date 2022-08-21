@@ -1,0 +1,77 @@
+using Gtk 4.0;
+using Adw 1;
+
+template LauncherWindow: Adw.ApplicationWindow {
+    title: "Sonic Mania Decompilation Project";
+    default-width: 540;
+    default-height: 320;
+    resizable: false;
+
+    Gtk.WindowHandle {
+        
+        Gtk.Box {
+            orientation: vertical;
+
+            Gtk.HeaderBar {
+                styles ["flat"]
+            }
+
+            Gtk.Box {
+                orientation: vertical;
+                vexpand: true;
+                valign: center;
+                halign: center;
+                
+                margin-start: 32;
+                margin-end: 32;
+                margin-top: 32;
+                margin-bottom: 32;
+                spacing: 8;
+
+                Gtk.Label {
+                    styles ["title-1"]
+                    label: "Not so fast!";
+                }
+                
+                Gtk.Label description {
+                    justify: center;
+                    label: "text";
+                }
+
+                Gtk.Label {
+                    styles ["title-3"]
+                    label: "Buy it on";
+                }
+                Gtk.Box {
+                    spacing: 4;                
+                    halign: center;
+                    Gtk.LinkButton {
+                        uri: "https://store.steampowered.com/app/584400";
+                        label: "Steam";
+                    }
+                    Gtk.LinkButton {
+                        uri: "https://store.epicgames.com/p/sonic-mania";
+                        label: "Epic Games";
+                    }
+                    Gtk.LinkButton {
+                        uri: "https://www.origin.com/store/sonic-the-hedgehog/sonic-mania";
+                        label: "Origin";
+                    }
+                }
+                Gtk.Label {
+                    styles ["title-3"]
+                    label: "then import the file";
+                }
+                Gtk.Button {
+                    clicked => on_import();
+                    styles ["pill", "opaque", "suggested-action"]
+                    label: "Import Data.rsdk";
+                }
+                Gtk.Label {
+                    styles ["dim-label"]
+                    label: "Fun is infinite. This application is not affiliated with SEGA Enterprises.";
+                }
+            }
+        }
+    }
+}

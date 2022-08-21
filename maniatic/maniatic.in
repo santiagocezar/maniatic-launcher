@@ -1,0 +1,22 @@
+#!@PYTHON@
+
+import sys
+
+
+pkgdatadir = "@pkgdatadir@"
+sys.path.insert(1, pkgdatadir)
+
+if __name__ == "__main__":
+    from maniatic.setup_game import find_data, launch_game
+
+    if find_data():
+        exit(launch_game())
+
+    from gi.repository import Gio
+
+    res = Gio.Resource.load(f"{pkgdatadir}/maniatic.gresource")
+    res._register()
+
+    from maniatic.launcher import main
+
+    main()

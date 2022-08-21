@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>io.github.Rubberduckycooly.RSDKv5</id>
+  <name>RSDKv5 Decompilation</name>
+  <summary> A complete decompilation of Retro Engine (v5)</summary>
+  <description>
+    <p>
+    A complete decompilation of Retro Engine v5, used in Sonic Mania Plus.
+    It allows to run this game natively, and facilitates the installation and development 
+    of mods.
+    To play this decompilation, you neeed to own a Steam copy of Sonic Mania (or Plus).
+    </p>
+  </description>
+  <url type="homepage">https://github.com/Rubberduckycooly/RSDKv5-Decompilation/</url>
+  <screenshots>
+    <screenshot type="default">https://cdn.sega.com/sonicmania01_0.png</screenshot>
+    <screenshot>https://cdn.sega.com/sonicmania02_0.png</screenshot>
+    <screenshot>https://cdn.sega.com/sonicmania04_0.png</screenshot>
+  </screenshots>
+  <launchable type="desktop-id">io.github.Rubberduckycooly.RSDKv5.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary</project_license>
+  <developer_name>SEGA</developer_name>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">mild</content_attribute>
+  </content_rating>
+  <releases>
+    <release version="1.0.0" date="2022-08-19">
+      <description>
+        <p>it's time to be a little silly</p>
+      </description>
+    </release>
+  </releases>
+</component>
