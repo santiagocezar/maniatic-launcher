@@ -16,8 +16,6 @@ GAMELIB_DEST = Path.home() / "Game.so"
 
 
 def find_data() -> bool:
-    return False
-
     if DATA_DEST.exists():
         return True
 
@@ -32,4 +30,8 @@ def find_data() -> bool:
 def launch_game() -> int:
     if not GAMELIB_DEST.exists:
         os.symlink(GAMELIB_SRC, GAMELIB_DEST)
+    
+    if not DATA_DEST.exists():
+        return 1 
+
     return call("RSDKv5U")

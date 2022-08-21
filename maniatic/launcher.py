@@ -55,9 +55,7 @@ class LauncherWindow(Adw.ApplicationWindow):
             file = chooser.get_file()
             path = str(file.get_path())
             sh.copy(path, DATA_DEST)
-            self.get_application().quit()
-
-            launch_game()
+            self.close()
 
     @Gtk.Template.Callback()
     def on_import(self, *args):
