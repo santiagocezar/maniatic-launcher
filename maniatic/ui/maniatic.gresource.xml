@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/io/github/Rubberduckycooly/RSDKv5-Decompilation">
+  <gresource prefix="/io/github/santiagocezar/maniatic-launcher">
     <file>main.ui</file>
     <file>majin.svg</file>
     <file>style.css</file>

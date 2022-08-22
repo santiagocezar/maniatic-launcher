@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>io.github.Rubberduckycooly.RSDKv5-Decompilation</id>
-  <name>RSDKv5U</name>
-  <summary> A complete decompilation of Retro Engine (v5)</summary>
+  <id>io.github.santiagocezar.maniatic-launcher</id>
+  <name>Maniatic Launcher</name>
+  <summary>A launcher for the decompilation of Retro Engine (v5)</summary>
   <keywords>
     <keyword>Sonic</keyword>
     <keyword>Mania</keyword>
-    <keyword>decompilation</keyword>
+    <keyword>RSDK</keyword>
   </keywords>
   <categories>
     <category>Game</category>
   </categories>
   <description>
     <p>
-    A complete decompilation of Retro Engine v5, used in Sonic Mania Plus.
+    A launcher for the decompilation of Retro Engine v5, used in Sonic Mania Plus.
     It allows to run this game natively, and facilitates the installation and development 
     of mods.
     To play this decompilation, you neeed to own a Steam copy of Sonic Mania (or Plus).
     </p>
   </description>
-  <url type="homepage">https://github.com/Rubberduckycooly/RSDKv5-Decompilation/</url>
+  <url type="homepage">https://github.com/santiagocezar/maniatic-launcher/</url>
   <screenshots>
     <screenshot type="default">https://cdn.sega.com/sonicmania01_0.png</screenshot>
     <screenshot>https://cdn.sega.com/sonicmania02_0.png</screenshot>
     <screenshot>https://cdn.sega.com/sonicmania04_0.png</screenshot>
   </screenshots>
-  <launchable type="desktop-id">io.github.Rubberduckycooly.RSDKv5-Decompilation.desktop</launchable>
+  <launchable type="desktop-id">io.github.santiagocezar.maniatic-launcher.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
   <developer_name>SEGA</developer_name>

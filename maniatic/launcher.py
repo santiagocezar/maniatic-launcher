@@ -43,7 +43,7 @@ class ImportData(Gtk.Box):
         self.append(text)
 
 
-@Gtk.Template(resource_path="/io/github/Rubberduckycooly/RSDKv5-Decompilation/main.ui")
+@Gtk.Template(resource_path="/io/github/santiagocezar/maniatic-launcher/main.ui")
 class LauncherWindow(Adw.ApplicationWindow):
     __gtype_name__ = "LauncherWindow"
 
@@ -80,10 +80,10 @@ def on_activate(app: Adw.Application):
 
 
 def main():
-    app = Adw.Application(application_id="io.github.Rubberduckycooly.RSDKv5-Decompilation")
+    app = Adw.Application(application_id="io.github.santiagocezar.maniatic-launcher")
 
     css = Gtk.CssProvider()
-    css.load_from_resource("/io/github/Rubberduckycooly/RSDKv5-Decompilation/style.css")
+    css.load_from_resource("/io/github/santiagocezar/maniatic-launcher/style.css")
 
     app.connect("activate", on_activate)
     app.run()

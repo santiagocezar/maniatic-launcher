@@ -1,14 +1,14 @@
 install_data(
-    'io.github.Rubberduckycooly.RSDKv5-Decompilation.svg',
+    'io.github.santiagocezar.maniatic-launcher.svg',
     install_dir: join_paths(get_option('prefix'), get_option('datadir'), 'icons/hicolor/scalable/apps')
 )
 
 install_data(
-    'io.github.Rubberduckycooly.RSDKv5-Decompilation.desktop',
+    'io.github.santiagocezar.maniatic-launcher.desktop',
     install_dir: join_paths(get_option('prefix'), get_option('datadir'), 'applications')
 )
 
 install_data(
-    'io.github.Rubberduckycooly.RSDKv5-Decompilation.appdata.xml',
+    'io.github.santiagocezar.maniatic-launcher.appdata.xml',
     install_dir: join_paths(get_option('prefix'), get_option('datadir'), 'appdata')
 )
