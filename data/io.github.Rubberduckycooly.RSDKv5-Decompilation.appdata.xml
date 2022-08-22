@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>io.github.Rubberduckycooly.RSDKv5</id>
+  <id>io.github.Rubberduckycooly.RSDKv5-Decompilation</id>
   <name>RSDKv5U</name>
   <summary> A complete decompilation of Retro Engine (v5)</summary>
   <keywords>
@@ -25,7 +25,7 @@
     <screenshot>https://cdn.sega.com/sonicmania02_0.png</screenshot>
     <screenshot>https://cdn.sega.com/sonicmania04_0.png</screenshot>
   </screenshots>
-  <launchable type="desktop-id">io.github.Rubberduckycooly.RSDKv5.desktop</launchable>
+  <launchable type="desktop-id">io.github.Rubberduckycooly.RSDKv5-Decompilation.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
   <developer_name>SEGA</developer_name>

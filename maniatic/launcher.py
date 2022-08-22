@@ -14,7 +14,7 @@ import shutil as sh
 MESSAGE = """\
 The app couldn't find a copy of Sonic Mania installed on Steam.
 
-We can't legally distribute the assets (sprites, levels, music, etc.) 
+We can't legally distribute the assets (sprites, levels, music, etc.)
 from the game, so you need to provide your legal copy of it.
 """
 
@@ -43,7 +43,7 @@ class ImportData(Gtk.Box):
         self.append(text)
 
 
-@Gtk.Template(resource_path="/io/github/Rubberduckycooly/RSDKv5/main.ui")
+@Gtk.Template(resource_path="/io/github/Rubberduckycooly/RSDKv5-Decompilation/main.ui")
 class LauncherWindow(Adw.ApplicationWindow):
     __gtype_name__ = "LauncherWindow"
 
@@ -80,10 +80,10 @@ def on_activate(app: Adw.Application):
 
 
 def main():
-    app = Adw.Application(application_id="io.github.Rubberduckycooly.RSDKv5")
+    app = Adw.Application(application_id="io.github.Rubberduckycooly.RSDKv5-Decompilation")
 
     css = Gtk.CssProvider()
-    css.load_from_resource("/io/github/Rubberduckycooly/RSDKv5/style.css")
+    css.load_from_resource("/io/github/Rubberduckycooly/RSDKv5-Decompilation/style.css")
 
     app.connect("activate", on_activate)
     app.run()
