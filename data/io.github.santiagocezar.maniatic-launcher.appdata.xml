@@ -16,7 +16,28 @@
     A launcher for the decompilation of Retro Engine v5, used in Sonic Mania Plus.
     It allows to run this game natively, and facilitates the installation and development 
     of mods.
+    </p>
+    <p>
     To play this decompilation, you neeed to own a Steam copy of Sonic Mania (or Plus).
+    </p>
+
+    <p>This software is distributed under Fair Use. The Digital Millenium Copyright Act of 1998, in Section 103(f)(3) regarding Reverse Engineering states:</p>
+    <p>
+      The information acquired through the acts permitted under
+      paragraph (1), and the means permitted under paragraph (2),
+      may be made available to others if the person referred to in paragraph
+      (1) or (2), as the case may be, provides such information or means
+      solely for the purpose of enabling interoperability of an independently
+      created computer program with other programs, and to the
+      extent that doing so does not constitute infringement under this
+      title or violate applicable law other than this section.
+    </p>
+    <p>
+    This software contains decompiled code from Sonic Mania, owned by Sega Corporation,
+    which was adapted to run natively in Linux-based operating systems. It does not
+    contain any kind of art (music, graphics) or level layouts from the original game.
+    As a result, the software does not work unless the user provides their own copy 
+    of Sonic Mania, obtained by their own legal means.
     </p>
   </description>
   <url type="homepage">https://github.com/santiagocezar/maniatic-launcher/</url>
