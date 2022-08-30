@@ -42,14 +42,15 @@
   </description>
   <url type="homepage">https://github.com/santiagocezar/maniatic-launcher/</url>
   <screenshots>
-    <screenshot type="default">https://cdn.sega.com/sonicmania01_0.png</screenshot>
+    <screenshot type="default">https://raw.githubusercontent.com/santiagocezar/maniatic-launcher/main/data/launcher_screenshot.png</screenshot>
+    <screenshot>https://cdn.sega.com/sonicmania01_0.png</screenshot>
     <screenshot>https://cdn.sega.com/sonicmania02_0.png</screenshot>
     <screenshot>https://cdn.sega.com/sonicmania04_0.png</screenshot>
   </screenshots>
   <launchable type="desktop-id">io.github.santiagocezar.maniatic-launcher.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>LicenseRef-proprietary</project_license>
-  <developer_name>SEGA</developer_name>
+  <project_license>GPL-3.0 AND LicenseRef=https://github.com/Rubberduckycooly/RSDKv5-Decompilation/blob/master/LICENSE.md</project_license>
+  <developer_name>Santiago Cézar</developer_name>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">mild</content_attribute>
   </content_rating>
