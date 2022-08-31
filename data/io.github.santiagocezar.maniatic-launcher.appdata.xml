@@ -49,7 +49,7 @@
   </screenshots>
   <launchable type="desktop-id">io.github.santiagocezar.maniatic-launcher.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0 AND LicenseRef=https://github.com/Rubberduckycooly/RSDKv5-Decompilation/blob/master/LICENSE.md</project_license>
+  <project_license>GPL-3.0 AND LicenseRef-RDSCLv2=https://github.com/Rubberduckycooly/RSDKv5-Decompilation/blob/master/LICENSE.md</project_license>
   <developer_name>Santiago Cézar</developer_name>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">mild</content_attribute>
