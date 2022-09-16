@@ -31,5 +31,8 @@ def launch_game() -> int:
     return call(
         "RSDKv5U",
         # load Game.so from /app/lib instead of symlinking to the cwd
-        env={"LD_LIBRARY_PATH": "/app/lib"},
+        env=dict(
+            os.environ,
+            LD_LIBRARY_PATH="/app/lib",
+        ),
     )
