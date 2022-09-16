@@ -37,8 +37,6 @@ class ImportData(Gtk.Box):
         text.set_markup(MESSAGE)
         text.set_justify(Gtk.Justification.CENTER)
 
-        buy_mania_title = Gtk.Label()
-
         self.append(title)
         self.append(text)
 
@@ -47,6 +45,8 @@ class ImportData(Gtk.Box):
 class LauncherWindow(Adw.ApplicationWindow):
     __gtype_name__ = "LauncherWindow"
 
+    _dialog: Gtk.MessageDialog
+
     description = Gtk.Template.Child()
 
     def on_import_response(self, chooser: Gtk.FileChooserNative, res: int):
@@ -54,6 +54,22 @@ class LauncherWindow(Adw.ApplicationWindow):
         if res == Gtk.ResponseType.ACCEPT:
             file = chooser.get_file()
             path = str(file.get_path())
+            print("bout to open")
+            with open(path, "rb") as data:
+                print("opened, bout to read")
+                if data.read(6) != b"RSDKv5":
+                    self._dialog = Gtk.MessageDialog(
+                        #  Gtk.DialogFlags.DESTROY_WITH_PARENT | Gtk.DialogFlags.MODAL,
+                        message_type=Gtk.MessageType.ERROR,
+                        buttons=Gtk.ButtonsType.CLOSE,
+                        transient_for=self,
+                        text="The file is not a valid RSDKv5 data file",
+                    )
+                    self._dialog.connect("response", lambda *a: self._dialog.close())
+                    self._dialog.present()
+                    return
+                print("read")
+
             sh.copy(path, DATA_DEST)
             self.close()
 
@@ -70,6 +86,7 @@ class LauncherWindow(Adw.ApplicationWindow):
 
     def __init__(self, app: Adw.Application) -> None:
         super().__init__(application=app)
+        self.set_name("app")
         self.description.set_label(MESSAGE)
         self.present()
 

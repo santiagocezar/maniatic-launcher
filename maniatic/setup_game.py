@@ -11,9 +11,6 @@ DATA_FILES = [
 
 DATA_DEST = Path.home() / "Data.rsdk"
 
-GAMELIB_SRC = Path("/app/lib/Game.so")
-GAMELIB_DEST = Path.home() / "Game.so"
-
 
 def find_data() -> bool:
     if DATA_DEST.exists():
@@ -28,10 +25,11 @@ def find_data() -> bool:
 
 
 def launch_game() -> int:
-    if not GAMELIB_DEST.exists():
-        os.symlink(GAMELIB_SRC, GAMELIB_DEST)
-    
     if not DATA_DEST.exists():
-        return 1 
+        return 1
 
-    return call("RSDKv5U")
+    return call(
+        "RSDKv5U",
+        # load Game.so from /app/lib instead of symlinking to the cwd
+        env={"LD_LIBRARY_PATH": "/app/lib"},
+    )

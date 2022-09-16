@@ -11,6 +11,10 @@ python = "^3.10"
 pytest = "^5.2"
 PyGObject = "^3.42.2"
 
+[tool.poetry.group.dev.dependencies]
+black = {version = "^22.8.0", allow-prereleases = true}
+bandit = "^1.7.4"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
