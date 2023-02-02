@@ -38,6 +38,8 @@ def install_shaders():
         mods = ConfigParser()
         mods.read(MODS_DEST / "modconfig.ini")
 
+        if "Mods" not in mods:
+            mods["Mods"] = {}
         mods["Mods"][MOD_NAME] = "y"
 
         with open(MODS_DEST / "modconfig.ini", "wt") as f:
