@@ -36,6 +36,7 @@ def install_shaders():
         (MODS_DEST / MOD_NAME).symlink_to(OGL_MOD_PATH, target_is_directory=True)
 
         mods = ConfigParser()
+        mods.optionxform = str
         mods.read(MODS_DEST / "modconfig.ini")
 
         if "Mods" not in mods:
