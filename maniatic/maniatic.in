@@ -8,7 +8,7 @@ sys.path.insert(1, pkgdatadir)
 
 if __name__ == "__main__":
     from maniatic import FLATPAK
-    from maniatic.setup_game import find_data, launch_game
+    from maniatic.setup_game import find_data, launch_game, install_shaders
 
     if not FLATPAK or not find_data():
         from gi.repository import Gio
@@ -21,6 +21,7 @@ if __name__ == "__main__":
         main()
 
     if FLATPAK:
+        install_shaders()
         exit(launch_game())
     else:
         print("Not running as a flatpak, just testing the launcher")
