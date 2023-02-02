@@ -1,6 +1,6 @@
+from configparser import ConfigParser
 from pathlib import Path
 from subprocess import call
-import shutil as sh
 import os
 
 DATA_FILES = [
@@ -22,6 +22,25 @@ def find_data() -> bool:
             return True
 
     return False
+
+
+MODS_DEST = Path.home() / "mods"
+MOD_NAME = "OpenGL-Shaders"
+OGL_MOD_PATH = Path("/app/share") / MOD_NAME
+
+
+def install_shaders():
+    MODS_DEST.mkdir(exist_ok=True)
+    if not (MODS_DEST / MOD_NAME).exists():
+        (MODS_DEST / MOD_NAME).symlink_to(OGL_MOD_PATH, target_is_directory=True)
+
+        mods = ConfigParser()
+        mods.read(MODS_DEST / "modconfig.ini")
+
+        mods["Mods"][MOD_NAME] = "y"
+
+        with open(MODS_DEST / "modconfig.ini", "wt") as f:
+            mods.write(f)
 
 
 def launch_game() -> int:
