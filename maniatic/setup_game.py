@@ -7,7 +7,7 @@ import os
 DATA_FILES = [
     Path.home()
     / ".var/app/com.valvesoftware.Steam/.steam/steam/steamapps/common/Sonic Mania/Data.rsdk",
-    Path.home() / ".steam/steam/steamapps/common/Sonic Mania/Data.rsdk",
+    Path.home() / ".local/share/Steam/steamapps/common/Sonic Mania/Data.rsdk",
 ]
 
 DATA_DEST = Path.home() / "Data.rsdk"
