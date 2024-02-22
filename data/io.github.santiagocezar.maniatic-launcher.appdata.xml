@@ -42,10 +42,50 @@
   </description>
   <url type="homepage">https://github.com/santiagocezar/maniatic-launcher/</url>
   <screenshots>
-    <screenshot type="default">https://raw.githubusercontent.com/santiagocezar/maniatic-launcher/main/data/launcher_screenshot.png</screenshot>
-    <screenshot>https://cdn.sega.com/sonicmania01_0.png</screenshot>
-    <screenshot>https://cdn.sega.com/sonicmania02_0.png</screenshot>
-    <screenshot>https://cdn.sega.com/sonicmania04_0.png</screenshot>
+    <screenshot type="default">
+      <image>
+        https://raw.githubusercontent.com/santiagocezar/maniatic-launcher/main/data/launcher_screenshot.png
+      </image>
+      <caption>
+        A window titled "Sonic Mania Decompilation Project", the background is a tiled silhouette of
+        the "Majin Sonic" sprite from that Sonic CD sound test easter egg.
+
+        Inside the window, in big bold letters it says: "Not so fast!", and following below with a
+        normal typeface: "The app couldn't find a copy of Sonic Mania installed on Steam. We can't
+        legally distribute the assets (sprites, levels, music, etc.) from the game, so you need to
+        provide your legal copy of it."
+
+        Links to Steam, Epic Games and Origin are listed below, with a button to import the Data.rsdk
+        file manually. In the footer of the window it reads: "Fun is infinite. This application is
+        not affiliated with SEGA Corporation."
+      </caption>
+    </screenshot>
+    <screenshot>
+      <image>
+        https://cdn.sega.com/sonicmania01_0.png
+      </image>
+      <caption>
+        A screenshot of Sonic Mania where Sonic is eager play Green Hill Zone Act 1.
+      </caption>
+    </screenshot>
+    <screenshot>
+      <image>
+        https://cdn.sega.com/sonicmania02_0.png
+      </image>
+      <caption>
+        A screenshot of Sonic Mania where Sonic is fighting against the double-wrecking-ball boss
+        from Green Hill Zone Act 1.
+      </caption>
+    </screenshot>
+    <screenshot>
+      <image>
+        https://cdn.sega.com/sonicmania04_0.png
+      </image>
+      <caption>
+        A screenshot of Sonic Mania where Sonic lost all his rings after being hit by the microphone
+        badnik from Studiopolis Zone Act 1.
+      </caption>
+    </screenshot>
   </screenshots>
   <launchable type="desktop-id">io.github.santiagocezar.maniatic-launcher.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
