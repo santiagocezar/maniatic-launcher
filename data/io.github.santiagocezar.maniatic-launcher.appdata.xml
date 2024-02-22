@@ -2,7 +2,7 @@
 <component type="desktop">
   <id>io.github.santiagocezar.maniatic-launcher</id>
   <name>Maniatic Launcher</name>
-  <summary>A launcher for the decompilation of Retro Engine (v5)</summary>
+  <summary>A Retro Engine v5 launcher</summary>
   <keywords>
     <keyword>Sonic</keyword>
     <keyword>Mania</keyword>
