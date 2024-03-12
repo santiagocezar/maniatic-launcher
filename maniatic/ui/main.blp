@@ -1,7 +1,7 @@
 using Gtk 4.0;
 using Adw 1;
 
-template LauncherWindow: Adw.ApplicationWindow {
+template $LauncherWindow: Adw.ApplicationWindow {
     title: "Maniatic Launcher";
     default-width: 540;
     default-height: 320;
@@ -59,7 +59,7 @@ template LauncherWindow: Adw.ApplicationWindow {
                     label: "then import the file";
                 }
                 Gtk.Button {
-                    clicked => on_import();
+                    clicked => $on_import();
                     styles ["pill", "opaque", "suggested-action"]
                     label: "Import Data.rsdk";
                 }

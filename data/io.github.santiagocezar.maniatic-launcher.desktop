@@ -6,3 +6,4 @@ Icon=io.github.santiagocezar.maniatic-launcher
 Exec=maniatic
 Categories=Game;
 Keywords=Sonic;Mania;Mania Plus;
+MimeType=x-scheme-handler/smmm

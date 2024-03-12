@@ -3,6 +3,10 @@ from pathlib import Path
 from subprocess import call
 import shutil as sh
 import os
+import urllib.request
+import io
+import zipfile
+
 
 DATA_FILES = [
     Path.home()
@@ -45,6 +49,32 @@ def install_shaders():
 
         with open(MODS_DEST / "modconfig.ini", "wt") as f:
             mods.write(f)
+
+def install_mod(mod_url: str):
+    MODS_DEST.mkdir(exist_ok=True)
+
+    res = urllib.request.urlopen(mod_url.split(",")[0])
+    length = int(res.getheader('content-length'))
+
+    print(f"downloading {length} bytes")
+
+    Path("mods").mkdir(exist_ok=True)
+
+    with open("/tmp/mod.zip", "wb") as mod_zip:
+        size = 0
+        while True:
+            block = res.read(4096)
+            if not block:
+                break
+            mod_zip.write(block)
+            size += len(block)
+            if length:
+                print('{:.2f}% done'.format(size / length * 100))
+
+    print(f"extracting...")
+
+    with zipfile.ZipFile("/tmp/mod.zip", "r") as zipf:
+        zipf.extractall("mods")
 
 
 def launch_game() -> int:
