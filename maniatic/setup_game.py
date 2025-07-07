@@ -7,15 +7,14 @@ import urllib.request
 import io
 import zipfile
 
+DATA_STEAM_PATH = ".local/share/Steam/steamapps/common/Sonic Mania/Data.rsdk"
 
 DATA_FILES = [
-    Path.home()
-    / ".var/app/com.valvesoftware.Steam/.steam/steam/steamapps/common/Sonic Mania/Data.rsdk",
-    Path.home() / ".local/share/Steam/steamapps/common/Sonic Mania/Data.rsdk",
+    Path.home() / ".var/app/com.valvesoftware.Steam" / DATA_STEAM_PATH,
+    Path.home() / DATA_STEAM_PATH,
 ]
 
 DATA_DEST = Path.home() / "Data.rsdk"
-
 
 def find_data() -> bool:
     if DATA_DEST.exists():
@@ -40,7 +39,7 @@ def install_shaders():
         (MODS_DEST / MOD_NAME).symlink_to(OGL_MOD_PATH, target_is_directory=True)
 
         mods = ConfigParser()
-        mods.optionxform = str
+        mods.optionxform = lambda optionstr: optionstr
         mods.read(MODS_DEST / "modconfig.ini")
 
         if "Mods" not in mods:
